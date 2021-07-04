@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ViewOrder"
+            android:label="@string/title_activity_view_order"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BuyProducts"
+            android:label="@string/title_activity_buy_products"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewProdcuts"
+            android:label="@string/title_activity_view_prodcuts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddProduct"
+            android:label="@string/title_activity_add_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberHome"
+            android:label="@string/title_activity_member_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminHome"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
