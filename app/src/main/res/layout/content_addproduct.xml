@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:hint="Enter The Product ID"
+            android:hint="Enter The item ID"
             android:inputType="textPersonName" />
 
         <EditText
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Product Name"
+            android:hint="item Name"
             android:gravity="center"
             android:inputType="textPersonName" />
 
