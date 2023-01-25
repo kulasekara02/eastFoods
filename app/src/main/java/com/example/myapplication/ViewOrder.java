@@ -68,7 +68,7 @@ public class ViewOrder extends AppCompatActivity {
 
             db.execSQL("CREATE TABLE IF NOT EXISTS Invoice (InvoiceId VARCHAR PRIMARY KEY  NOT NULL,ProdctId VARCHAR,Qty int,total int);");
 
-            Toast.makeText(getApplicationContext(), "Welcome PLz View Your Order", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), " View Your Order", Toast.LENGTH_LONG).show();
         } catch (Exception ex) {
             TextErrorMsg.setText("Error creating DB" + ex);
 
