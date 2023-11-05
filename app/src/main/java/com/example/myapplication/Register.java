@@ -94,26 +94,30 @@ public class Register extends AppCompatActivity {
             boolean valid = true;
 
             if (TextUserId.getText().toString().isEmpty()) {
-                Toast.makeText(getApplicationContext(), "User Name or ID can not be empty!!!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "User Name or ID cannot be empty!!!", Toast.LENGTH_LONG).show();
                 valid = false;
             }
+            
             if (TextPassword.getText().toString().isEmpty()) {
-                Toast.makeText(getApplicationContext(), "Password can not be empty?!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Password cannot be empty?!", Toast.LENGTH_LONG).show();
                 valid = false;
             }
-            if (!TextPassword.getText().toString().isEmpty() && TextPassword.getText().toString().length() <3) {
-                Toast.makeText(getApplicationContext(), "Password must have minimum 3 characters!!", Toast.LENGTH_LONG).show();
+            
+            if (!TextPassword.getText().toString().isEmpty() && TextPassword.getText().toString().length() < 3) {
+                Toast.makeText(getApplicationContext(), "Password must have a minimum of 3 characters!!", Toast.LENGTH_LONG).show();
                 valid = false;
             }
+            
             if (TextConfirmPassword.getText().toString().isEmpty()) {
-                Toast.makeText(getApplicationContext(), "Confirm Password can not be empty!!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Confirm Password cannot be empty!!", Toast.LENGTH_LONG).show();
+                valid = false;
+            }
+            
+            if (!TextPassword.getText().toString().equals(TextConfirmPassword.getText().toString())) {
+                Toast.makeText(getApplicationContext(), "Wrong Passwords, please try again!!", Toast.LENGTH_LONG).show();
                 valid = false;
             }
 
-            if (!TextPassword.getText().toString().equals(TextConfirmPassword.getText().toString())) {
-                Toast.makeText(getApplicationContext(), " Wrong Passwords please try again!!", Toast.LENGTH_LONG).show();
-                valid = false;
-            }
 
             if (valid) {
                 String UserName = TextUserId.getText().toString().trim();
